@@ -5,77 +5,74 @@
     box-sizing: border-box;
 }
 
-body{
-    background: #002339;
-    color: #fff;
-
-}
-
-.display{
-    
-    width:100%;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    background: #fff;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 26px 20px;
-    border-radius: 10px;
-
-
-
-}
-
-
-
 .container{
-
-    margin : 12%;
-    width: 90%;
-    max-width: 700px;
-
+    width : 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    color: #fff;
+    padding-top: 4%;
+    padding-left: 10%;
+    
 }
 
 .container h1{
-    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 35px ;
+    font-weight: 600;
 }
 
-.container h1 span{
-    color : #019f55;
-    border-bottom : 4px solid #019f55;
-    padding-bottom: 7px;
-}
-
-.display img{
-    width: 30px;
-    cursor: pointer;
-}
-
-.display input{
-    border: 0;
-    outline: 0;
-    font-size: 24px;
+.container h1 img{
+    width: 60px;
 }
 
 .container button img{
-    width: 28px;
-    margin-right: 10px;
+    width: 25px;
+    margin-right: 8px;
 }
 
-.container button {
-    border: 0;
-    outline: 0;
-    background: #019f55;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 300;
+.container button{
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 16px 26px;
-    border-radius: 5px;
+    background: linear-gradient(#9418fd,#571094);
+    color: #fff;
+    font-size: 16px;
+    outline: 0;
+    border : 0;
+    border-radius: 40px;
+
+    /* 15px applies to the top and bottom padding.
+    25px applies to the left and right padding. */
+    padding: 15px 25px;  
+
+    /* 30px applies to the top margin.
+    0 applies to both the left and right margins.
+    20px applies to the bottom margin. */
+    margin: 30px 0 20px;
     cursor: pointer;
 
+
+}
+
+
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
 }
